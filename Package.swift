@@ -10,9 +10,12 @@ let package = Package(
     targets: [
         .target(
             name: "BML",
-            dependencies: ["Core", "Node"]),
+            dependencies: ["Core", "Node"],
+            path: "Sources"
+        ),
         .testTarget(
             name: "BMLTests",
-            dependencies: ["BML"]),
+            dependencies: ["BML"]
+        ),
     ]
 )
